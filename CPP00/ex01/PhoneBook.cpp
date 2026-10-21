@@ -6,7 +6,7 @@
 /*   By: epandele <epandele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 11:47:36 by epandele          #+#    #+#             */
-/*   Updated: 2026/10/21 11:47:37 by epandele         ###   ########.fr       */
+/*   Updated: 2026/10/21 12:10:22 by epandele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static std::string trimContact(std::string str)
 }
 void PhoneBook::SearchContact(void)
 {
-    int choice;
+    int index;
 
     if(count == 0)
     {

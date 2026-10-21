@@ -1,11 +1,26 @@
-#ifndef PHONEBOOK.HPP
-#define PHONEBOOK.HPP
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: epandele <epandele@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/21 11:59:42 by epandele          #+#    #+#             */
+/*   Updated: 2026/10/21 12:03:27 by epandele         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <iomanip> //libreria usata per setw,
+#ifndef PHONEBOOK_HPP
+#define PHONEBOOK_HPP
+
+#include <iomanip> 
+//libreria usata per setw,
 //che stronca dopo i 10 caratteri le stringhe della colonna
 #include <iostream>
-#include <string> //libreria per poter usare le stringhe
-#include "Contact.hpp" // si importa Contact.hpp per prendere
+#include <string> 
+//libreria per poter usare le stringhe
+#include "Contact.hpp" 
+// si importa Contact.hpp per prendere
 //tutte le info sui contatti
 #include <limits>
 class PhoneBook
