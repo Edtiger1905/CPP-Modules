@@ -1,9 +1,9 @@
-NAME		= BraiiiiiiinnnzzzZ
+NAME		= Moarbrainz!
 
 CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 
-SRCS		= main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
+SRCS		= main.cpp zombieHorde.cpp Zombie.cpp
 OBJ_DIR		= obj
 OBJS		= $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
