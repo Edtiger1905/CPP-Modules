@@ -6,7 +6,7 @@
 /*   By: epandele <epandele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 15:14:27 by epandele          #+#    #+#             */
-/*   Updated: 2026/10/28 15:55:40 by epandele         ###   ########.fr       */
+/*   Updated: 2026/11/03 10:54:12 by epandele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 Weapon::Weapon()
 {
-    
+}
+Weapon::Weapon(std::string type)
+{
+    this->setType(type);
 }
 Weapon::~Weapon()
 {

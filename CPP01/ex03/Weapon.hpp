@@ -6,7 +6,7 @@
 /*   By: epandele <epandele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 15:07:04 by epandele          #+#    #+#             */
-/*   Updated: 2026/10/28 15:13:36 by epandele         ###   ########.fr       */
+/*   Updated: 2026/11/03 11:23:24 by epandele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ class Weapon
     private:
         std::string type;
     public:
-        Weapon(/* args */);
+        Weapon();
+        Weapon(std::string);
         ~Weapon();
         std::string getType();
         void setType(std::string type);
