@@ -1,9 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: epandele <epandele@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/11/09 14:11:26 by epandele          #+#    #+#             */
+/*   Updated: 2026/11/09 14:11:43 by epandele         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
 #include <string>
 #include "Zombie.hpp"
 
-// randomChump non e' dichiarata in Zombie.hpp: la dichiaro qui.
-// (Se la sposti nell'header, questa riga e' innocua: puoi lasciarla o toglierla.)
 void randomChump(std::string name);
 
 static void title(const std::string &t)
@@ -13,8 +23,6 @@ static void title(const std::string &t)
 
 int main(void)
 {
-	// newZombie e' un metodo di Zombie, quindi serve un'istanza per chiamarlo.
-	// Il suo distruttore stampera' "Factory" in fondo, alla fine del main.
 	Zombie factory("Factory");
 
 	title("TEST 1: zombie sullo stack (distrutto a fine scope)");
