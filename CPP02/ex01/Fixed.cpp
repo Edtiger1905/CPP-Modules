@@ -8,6 +8,11 @@ Fixed::Fixed(void)
 Fixed::Fixed(int const n)
 {
     std::cout << "Int constructor called" << std::endl;
+    this->_rawbits = n << this->_fractionalBits;
+}
+Fixed::Fixed(float const n)
+{
+    std::cout << "Float constructor called" << std::endl;
     this->_rawbits = roundf(n * (1 << this->_fractionalBits));
 }
 Fixed::Fixed(const Fixed &other)
