@@ -28,6 +28,10 @@ int Fixed::getRawBits(void) const
 {
     return (this->_rawBits);
 }
+void Fixed::setRawBits(int const raw)
+{
+    this->_rawBits = raw;
+}
 float Fixed::toFloat(void) const
 {
     return ((float)this->_rawBits / (1 << this->_fractionalBits));
