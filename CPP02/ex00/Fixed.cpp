@@ -10,7 +10,7 @@ Fixed::~Fixed(){
     std::cout << "Distructor called" << std::endl;
 }
 
-Fixed::Fixed(Fixed& op){
+Fixed::Fixed(const Fixed& op){
     std::cout << "Copy constructor called" << std::endl;
     *this = op;
 }

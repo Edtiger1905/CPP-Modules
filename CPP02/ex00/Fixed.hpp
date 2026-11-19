@@ -9,7 +9,7 @@ private:
 
 public:
     Fixed();
-    Fixed(Fixed& op); //costruttore di copia
+    Fixed(const Fixed& op); //costruttore di copia
     Fixed &operator=(const Fixed& op);
     int getRawBits(void)const;
     void setRawBits(int const raw);
