@@ -1,4 +1,4 @@
-NAME		= FIRST_OCF
+NAME		= CLAPTRAP
 
 CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
