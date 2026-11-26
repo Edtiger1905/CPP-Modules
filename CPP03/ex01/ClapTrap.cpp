@@ -3,7 +3,7 @@
 ClapTrap::ClapTrap(std::string name)
     : _name(name), _HitPoints(10), _EnergyPoints(10), _AttackDamage(0)
 {
-    std::cout << "Default constructor called" << std::endl;
+    std::cout << " Default constructor called" << std::endl;
 }
 ClapTrap::ClapTrap(const ClapTrap &other)
 {
@@ -11,7 +11,7 @@ ClapTrap::ClapTrap(const ClapTrap &other)
     _HitPoints = other.getHit();
     _EnergyPoints = other.getEnergy();
     _AttackDamage = other.getAttack();
-    std::cout << _name << "Copy constructor has been called." << std::endl;
+    std::cout << _name << " Copy constructor has been called." << std::endl;
 }
 ClapTrap &ClapTrap::operator=(const ClapTrap &other)
 {
@@ -22,12 +22,12 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other)
         _EnergyPoints = other.getEnergy();
         _AttackDamage = other.getAttack();
     }
-    std::cout << _name << "Overload operator has been called." << std::endl;
+    std::cout << _name << " Overload operator has been called." << std::endl;
     return (*this);
 }
 ClapTrap::~ClapTrap()
 {
-    std::cout << _name <<"Destructor called" << std::endl;
+    std::cout << _name <<" Destructor called" << std::endl;
 }
 std::string ClapTrap::getName() const
 {
