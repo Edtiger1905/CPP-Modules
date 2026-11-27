@@ -5,7 +5,7 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
     _name = name, _HitPoints = 100, _EnergyPoints = 50, _AttackDamage = 20;
     std::cout << "ScavTrap " << _name << " constructor has been called" << std::endl;
 }
-ScavTrap::ScavTrap(ScavTrap &other) : ClapTrap(other)
+ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other)
 {
     std::cout << "ScavTrap " << _name << " copy constructor has been called" << std::endl;
 }

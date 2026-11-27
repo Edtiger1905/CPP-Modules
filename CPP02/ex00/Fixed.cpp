@@ -7,7 +7,7 @@ Fixed::Fixed(){
 }
 
 Fixed::~Fixed(){
-    std::cout << "Distructor called" << std::endl;
+    std::cout << "Destructor called" << std::endl;
 }
 
 Fixed::Fixed(const Fixed& op){
